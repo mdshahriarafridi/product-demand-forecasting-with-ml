@@ -1,0 +1,54 @@
+# ======================
+# Python
+# ======================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.venv/
+venv/
+env/
+
+# ======================
+# Jupyter Notebook
+# ======================
+.ipynb_checkpoints/
+
+# ======================
+# OS files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# VS Code
+# ======================
+.vscode/
+
+# ======================
+# Logs
+# ======================
+*.log
+logs/
+
+# ======================
+# Environment / Secrets (IMPORTANT)
+# ======================
+.env
+*.env
+secrets.json
+config.json
+
+# ======================
+# Cache / ML tooling
+# ======================
+.cache/
+.pytest_cache/
+.mypy_cache/
+.huggingface/
+
+# ======================
+# Streamlit / Dash (if used)
+# ======================
+.streamlit/
