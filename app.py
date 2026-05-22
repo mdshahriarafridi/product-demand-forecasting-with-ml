@@ -5,10 +5,10 @@ import pickle
 
 @st.cache_resource
 def load_artifacts():
-    with open('xgboost_demand_model.pkl', 'rb') as f:
+    with open('models/xgboost_demand_model.pkl', 'rb') as f:
         model = pickle.load(f)
 
-    with open('label_encoders.pkl', "rb") as f:
+    with open('models/label_encoders.pkl', "rb") as f:
         encoders = pickle.load(f)
 
     return model, encoders
