@@ -26,8 +26,11 @@ product-demand-forecasting/
 ├── app.py                          # Streamlit version of the app (alternative interface)
 ├── model-train.ipynb               # Notebook used to train the XGBoost model
 ├── analysis.ipynb                  # Exploratory data analysis notebook
+├── Dockerfile                      # Container image definition
+├── docker-compose.yml              # Docker Compose service configuration
+├── .dockerignore                   # Files excluded from the Docker build context
 ├── requirements.txt                # Python dependencies
-└── venv/                           # Conda virtual environment (not committed to git)
+└── venv/                           # Virtual environment (not committed to git)
 ```
 
 ---
@@ -69,14 +72,34 @@ pip install -r requirements.txt
 ### Start the server
 
 ```bash
-python server.py
+uvicorn server:app --host 0.0.0.0 --port 8000
 ```
 
 ### Open the app
 
-Visit **http://localhost:5000** in your browser.
+Visit **http://localhost:8000** in your browser.
 
-> FastAPI also provides auto-generated interactive API docs at **http://localhost:5000/docs**.
+> FastAPI also provides auto-generated interactive API docs at **http://localhost:8000/docs**.
+
+---
+
+## Running with Docker
+
+### Build and start
+
+```bash
+docker compose up --build
+```
+
+### Open the app
+
+Visit **http://localhost:8000** in your browser.
+
+### Stop the container
+
+```bash
+docker compose down
+```
 
 ---
 
