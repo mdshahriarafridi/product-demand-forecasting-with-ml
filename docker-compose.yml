@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    container_name: demand_forecasting
+    ports:
+      - "8000:5000"

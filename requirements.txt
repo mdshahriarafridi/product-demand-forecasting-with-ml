@@ -7,4 +7,5 @@ ipykernel
 streamlit
 xgboost
 fastapi
-uvicorn[standard]
+uvicorn
+pydantic

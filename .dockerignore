@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+.git/
+.gitignore
+
+analysis.ipynb
+model-train.ipynb
+
+dataset/
+screenshot/
