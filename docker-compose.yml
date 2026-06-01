@@ -3,4 +3,4 @@ services:
     build: .
     container_name: demand_forecasting
     ports:
-      - "8000:5000"
+      - "8000:8000"
