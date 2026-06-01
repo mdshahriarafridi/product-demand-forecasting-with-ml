@@ -4,6 +4,13 @@ A machine learning web application that predicts product demand based on pricing
 
 ---
 
+## Live Demo
+
+The application is deployed and running live at:
+**[https://product-demand-forecasting-5nlx.onrender.com/](https://product-demand-forecasting-5nlx.onrender.com/)**
+
+---
+
 ## Screenshot
 
 ![App Screenshot](screenshot/screenshot.png)
